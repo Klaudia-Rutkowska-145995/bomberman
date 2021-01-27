@@ -13,10 +13,10 @@ TagManager:
   - UI
   - 
   - 
-  - 
-  - 
-  - 
-  - 
+  - Colliders
+  - Player
+  - Enemy
+  - Bombs
   - 
   - 
   - 

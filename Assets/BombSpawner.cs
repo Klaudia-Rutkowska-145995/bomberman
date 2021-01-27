@@ -18,7 +18,7 @@ public class BombSpawner : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        if(Input.GetKeyDown("space"))
+        if(Input.GetKeyDown("space") && !player.GetComponent<PlayerData>().Killed)
         {
             Vector3Int cell = tilemap.WorldToCell(player.transform.position);
             Vector3 cellCenterPos = tilemap.GetCellCenterWorld(cell);
