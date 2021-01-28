@@ -28,7 +28,7 @@ public class EnemyMovement : MonoBehaviour
 
     void Update()
     {
-        if (!GetComponent<EnemyData>().Killed)
+        if (!GetComponent<EnemyData>().Killed && !GetComponent<EnemyData>().Attacking)
         {
             transform.position = Vector3.MoveTowards(transform.position, movePoint.position, moveSpeed * Time.deltaTime);
 
