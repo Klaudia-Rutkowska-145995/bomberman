@@ -11,6 +11,7 @@ public class PlayerKiller : MonoBehaviour
     public void killPlayer()
     {
         playerData.Killed = true;
+        GameManager.instance.GameIsLost = true;
 
         animator.SetBool("Killed", true);
     }
